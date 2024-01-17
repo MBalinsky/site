@@ -1,0 +1,297 @@
+.employees-main {
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(#000000, 0.7);
+        z-index: 10;
+    }
+
+    &__components {
+        padding: 226px 0 150px;
+        padding-left: 75px;
+    }
+
+    &__title {
+        position: relative;
+        padding-bottom: 100px;
+        z-index: 99;
+    }
+
+    &__button {
+        position: relative;
+        z-index: 99;
+    }
+
+    &__decor {
+        position: absolute;
+    }
+
+    &__decor1 {
+        top: calc(45% - 100px);
+        left: 35%;
+    }
+
+    &__decor2 {
+        bottom: 0;
+        right: 30%;
+
+    }
+
+    &__decor3 {
+        top: 15%;
+        right: 20%;
+    }
+}
+
+.whatdoweoffer {
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: 10%;
+        width: 300px;
+        height: 300px;
+        border-radius: 594px;
+        background: rgba(31, 209, 249, 0.50);
+        filter: blur(200px);
+        z-index: 15;
+    }
+    &__title {
+        padding-bottom: 60px;
+    }
+
+    p {
+        position: relative;
+        z-index: 50;
+        text-align: justify;
+    }
+}
+
+.whoisneeded {
+    padding: 150px 0 150px;
+
+    &__title {
+        padding-bottom: 100px;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding-bottom: 70px;
+    }
+
+    &__tabs-item {
+        text-align: center;
+        padding: 25px 0 25px;
+        cursor: pointer;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        transition: all .2s ease;
+    }
+
+    &__tabs-item img {
+        transition: all .5s ease;
+    }
+
+    @media(hover: hover) {
+        &__tabs-item:hover img{
+            transform: scale(1.2);
+            transition: transform .5s ease;
+        }
+    }
+
+    &__tabs-item--active {
+        border-bottom: 2px solid #fff;
+        border-radius: 2px;
+    }
+
+    &__item-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    &__vacancies-items {
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 189px;
+    }
+
+    &__vacancies-items--active {
+        display: flex;
+    }
+
+    &__vacancies-item {
+        box-shadow: -1px -1px 20px 5px rgba(7, 70, 62, 0.20), 1px 1px 20px 5px rgba(31, 209, 249, 0.20);
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 20px 35px;
+    }
+
+    &__vacancies-item:nth-child(even) {
+        box-shadow: -1px -1px 20px 5px rgba(26, 50, 129, 0.20), 1px 1px 20px 5px rgba(31, 209, 249, 0.20);
+    }
+
+    &__vacancies-item-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__vacancies-items-img {
+        width: 79px;
+        height: 70px;
+    }
+}
+
+.employees__form-stack {
+    margin-bottom: 80px;
+}
+
+@media(max-width: 1200px) {
+    .whoisneeded {
+        &__tabs {
+            justify-content: space-around;
+            gap: 0;
+        }
+
+        &__item-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__subtitle {
+            font-size: 30px;
+        }
+
+        &__tabs-item {
+            padding: 20px 0 20px;
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .employees-main {
+        &__content {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__components {
+            padding-left: 0;
+        }
+
+        &__decor1 {
+            width: calc(80px + (200 - 80) * (100vw - 320px) / (1100 - 320));
+            left: 20%;
+            top: 35%;
+        }
+
+        &__decor2 {
+            width: calc(120px + (280 - 120) * (100vw - 320px) / (1100 - 320));
+            bottom: 7%;
+        }
+
+        &__decor3 {
+            width: calc(60px + (180 - 60) * (100vw - 320px) / (1100 - 320));
+        }
+    }
+    .whoisneeded {
+        &__vacancies-items {
+            column-gap: 80px;
+        }
+    }
+}
+
+@media(max-width: 935px) {
+    .whoisneeded {
+        &__tabs {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            row-gap: 20px;
+            padding-bottom: calc(30px + (40 + 40 * 0.7) * (100vw - 320px) / 935);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .employees-main {
+        &__components {
+            padding: calc(95px + (131 + 131 * 0.7) * (100vw - 320px) / 700) 0 calc(55px + (25 + 25 * 0.7) * (100vw - 320px) / 700);
+        }
+    }
+
+    .whatdoweoffer {
+        &__title {
+            padding-bottom: calc(25px + (35 + 35 * 0.7) * (100vw - 320px) / 700);
+        }
+
+        & p {
+            text-align: left;
+        }
+    }
+
+    .whoisneeded {
+        padding: calc(45px + 178.5 * (100vw - 320px) / 700) 0 calc(45px + 178.5 * (100vw - 320px) / 700);
+
+        &__title {
+            padding-bottom: calc(35px + 119 * (100vw - 320px) / 700);
+        }
+
+        &__vacancies-item {
+            padding: calc(10px + (10 + 10 * 0.7) * (100vw - 320px) / 700) calc(15px + (20 + 20 * 0.7) * (100vw - 320px) / 700);
+        }
+
+        &__vacancies-items-img {
+            width: calc(49px + (79 - 49) * (100vw - 320px) / (700 - 320));
+            height: calc(40px + (70 - 40) * (100vw - 320px) / (700 - 320));
+        }
+
+        &__vacancies-item-title {
+            font-size: calc(20px + (10 + 10 * 0.7) * (100vw - 320px) / 700);
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .employees-main {
+        &__title {
+            padding-bottom: 40px;
+        }
+    }
+
+    .whoisneeded {
+        &__tabs {
+            grid-template-columns: repeat(2, 2fr);
+            row-gap: 10px;
+        }
+
+        &__item-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__tabs-item {
+            padding: 10px 0 10px;
+        }
+    }
+}

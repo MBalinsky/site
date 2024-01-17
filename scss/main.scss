@@ -1,0 +1,29 @@
+//fonts 
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+//base
+@import "./base/normilize";
+
+//abstracts 
+@import "./abstracts/vars";
+@import "./abstracts/constants";
+@import "./abstracts/mixins";
+
+//components
+@import "./components/switch";
+@import "./components/buttons";
+@import "./components/btn-link";
+@import "./components/gradient-word";
+
+//layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/navigation";
+@import "./layout/feedback";
+
+//pages
+@import "./pages/main";
+@import "./pages/employees";
+@import "./pages/portfolio";
+@import "./pages/contacts";
+@import "./pages/project";
+

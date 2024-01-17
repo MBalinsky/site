@@ -1,0 +1,21 @@
+<svg width="175" height="200" viewBox="0 0 175 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 286">
+<rect id="Rectangle 109" width="95.8803" height="159.84" transform="matrix(0.90941 0.415901 -2.78121e-08 1 0 0.278076)" fill="url(#paint0_linear_3050_606)"/>
+<rect id="Rectangle 110" width="96.5521" height="159.844" transform="matrix(0.90941 -0.415901 2.78121e-08 1 87.1953 40.156)" fill="url(#paint1_linear_3050_606)"/>
+<path id="Vector 4134" d="M174.896 0L0 0.401561L87.1945 40.1561L174.896 0Z" fill="url(#paint2_linear_3050_606)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3050_606" x1="96.3204" y1="13.403" x2="0.628389" y2="115.941" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1FD1F9"/>
+<stop offset="1" stop-color="#07463E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_3050_606" x1="48.2761" y1="0" x2="48.2761" y2="159.844" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1A3281"/>
+<stop offset="1" stop-color="#07463E"/>
+</linearGradient>
+<linearGradient id="paint2_linear_3050_606" x1="34.4723" y1="13.2515" x2="141.538" y2="24.0902" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1A3281"/>
+<stop offset="1" stop-color="#1FD1F9"/>
+</linearGradient>
+</defs>
+</svg>

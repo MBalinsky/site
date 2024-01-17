@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wow company</title>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <div class="header__line">
+                        <div class="header__leftComponent">
+                            <div class="header__burger-container">
+                                <div class="header__burger">
+                                    <div class="header__burgerLine header__burgerLine-first"></div>
+                                    <div class="header__burgerLine header__burgerLine-second"></div>
+                                    <div class="header__burgerLine header__burgerLine-third"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="header__logo">
+                                <img src="../svg/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-item underline active-link"><a href="#" class="nav__link">О нас</a></li>
+                            <li class="nav-item underline"><a href="./employees.html" class="nav__link">Сотрудникам</a>
+                            </li>
+                            <li class="nav-item underline"><a href="./portfolio.html" class="nav__link">Портфолио</a>
+                            </li>
+                            <li class="nav-item underline"><a href="./contacts.html" class="nav__link">Контакты</a></li>
+                        </ul>
+                        <div class="header__rightComponent">
+                            <button class="standart__btn-link charity-btn">Благотворительность</button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="burger-popup"></div>
+                <div class="burger">
+                    <div class="burger__container">
+                        <a href="#" class="logo__burger">
+                            <img src="../svg/logo.svg" alt="logo menu">
+                        </a>
+                        <img src="../svg/Group280.svg" alt="cross" class="burger__cross">
+                    </div>
+                    <nav class="burger__nav">
+                        <ul class="burger__items">
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">
+                                    <div class="burger__items-link-text"><span class="gradient-word-first">Кто</span> мы
+                                        такие? </div>
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">О нас<div
+                                        class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div></a></li>
+                            <li class="burger__item"><a href="../pages/employees.html" class="burger__items-link underline-two">Сотрудникам
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="../pages/portfolio.html" class="burger__items-link underline-two">
+                                    <div class="burger__items-link-text"><span class="gradient-word-first">Портфолио</span></div>
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                            <li class="burger__item"><a href="./contacts.html" class="burger__items-link underline-two">Контакты
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="./project.html" class="burger__items-link underline-two">Страница проекта<div
+                                        class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two"><span
+                                        class="gradient-word-first">Контакты</span>
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                        </ul>
+                        <div class="burger__buttons">
+                            <a
+                                class="standart-button burger__button-info burger__button-info-1">Благотворительность</a>
+                            <a href="#"
+                                class="standart__btn-link burger__button-info burger__button-info-2">Связаться</a>
+                        </div>
+                        <nav class="header__nav-sns">
+                            <ul class="header__sns-items">
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/social.svg" alt="sns">
+                                        <span class="header__sns-text">Telegram</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/socialinst.svg" alt="sns">
+                                        <span class="header__sns-text">Instagram</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/sociallinkedin.svg" alt="sns">
+                                        <span class="header__sns-text">LinkedIn</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/socialvk.svg" alt="sns">
+                                        <span class="header__sns-text">VKontakte</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/socialwatsapp.svg" alt="sns">
+                                        <span class="header__sns-text">WhatsApp</span>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="wow">
+                <div class="container">
+                    <div class="wow__content">
+                        <div class="wow__components components-animation">
+                            <h1 class="wow__title title">WOW - лучшее, <br>
+                                что
+                                <span class="gradient-word-first">изобрели</span>
+                            </h1>
+                            <a href="#" class="standart__btn-link wow__btn">Написать</a>
+                        </div>
+                        <img src="../gif/52ed62d33176d798b82cf767d70aabd6.gif" alt="animation" class="wow__img img-animation">
+                    </div>
+                </div>
+            </section>
+            <section class="about-company">
+                <div class="container">
+                    <div class="about-company__content">
+                        <h2 class="about-company__title subtitle"><span class="gradient-word-two">Кто</span> мы?</h2>
+                        <p class="about-company__text">Мы небольшая IT-компания, что занимается разработкой софта для
+                            вашего бизнеса. Может мы и не
+                            лучшие в своём деле, но это только пока. Обратись к нам и возможно для тебя мы станем
+                            идеальным решением. Мы предоставляем невероятно выгодные условия для клиентов, так как
+                            готовы постраиваться под любого нашего заказчика. Главным для нас является помочь вам в
+                            вашем деле!</p>
+                    </div>
+                    <div class="about-company__slider">
+                        <div class="about-company__slider-wrapper">
+                            <div class="about-company__slider-item">
+                                <p class="about-company__slider-text">Выполненные
+                                    работы</p>
+                                <p class="about-company__slider-number"><span class="gradient-word-two">156</span></p>
+                            </div>
+                            <div class="about-company__slider-item">
+                                <p class="about-company__slider-text">Выполненные
+                                    работы</p>
+                                <p class="about-company__slider-number"><span class="gradient-word-two">156</span></p>
+                            </div>
+                            <div class="about-company__slider-item">
+                                <p class="about-company__slider-text">Выполненные
+                                    работы</p>
+                                <p class="about-company__slider-number"><span class="gradient-word-two">156</span></p>
+                            </div>
+                            <div class="about-company__slider-item">
+                                <p class="about-company__slider-text">Выполненные
+                                    работы</p>
+                                <p class="about-company__slider-number"><span class="gradient-word-two">156</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__title title">Основываясь на прошлом, создаём <span
+                            class="gradient-word-first">будущее!</span></h2>
+                    <div class="services__content">
+                        <div class="services__accordeon">
+                            <div class="services__accordeon-item-wrapper">
+                                <div class="services__accordeon-item services__accordeon-item"
+                                    data-servicesTab="services__web-design">
+                                    <h2>Веб-дизайн</h2>
+                                    <img src="../svg/cross.svg" alt="cross"
+                                        class="services__accordeon-cross services__accordeon-cross--active">
+                                </div>
+                                <div
+                                    class="services__accordeon-content-wrapper services__web-design services__accordeon-content--active">
+                                    <div class="accordeon__title-wrapper">
+                                        <h3>Дизайн</h3>
+                                        <img src="../svg/square.svg" alt="services">
+                                    </div>
+                                    <p>Мы создаем исключительный
+                                        дизайн, такой какой вы вряд-ли
+                                        где-то найдете, потому что команда
+                                        наших профессионалов создаст
+                                        нечто новое, необычное и то, чем
+                                        вы точно будете довольны!</p>
+                                    <a href="../pages/portfolio.html#porfolio-sroll" class="standart__btn-link services__btn-project">Проекты</a>
+                                </div>
+                            </div>
+                            <div class="services__accordeon-item-wrapper">
+                                <div class="services__accordeon-item" data-servicesTab="services__frontend">
+                                    <h2>Frontend-разработка</h2>
+                                    <img src="../svg/cross.svg" alt="cross" class="services__accordeon-cross">
+                                </div>
+                                <div class="services__accordeon-content-wrapper services__frontend">
+                                    <div class="accordeon__title-wrapper">
+                                        <h3>Frontend-разработка</h3>
+                                        <img src="../svg/Group286.svg" alt="services">
+                                    </div>
+                                    <p>Мы создаем исключительный
+                                        дизайн, такой какой вы вряд-ли
+                                        где-то найдете, потому что команда
+                                        наших профессионалов создаст
+                                        нечто новое, необычное и то, чем
+                                        вы точно будете довольны!</p>
+                                    <a href="#" class="standart__btn-link services__btn-project">Проекты</a>
+                                </div>
+                            </div>
+                            <div class="services__accordeon-item-wrapper">
+                                <div class="services__accordeon-item" data-servicesTab="services__backend">
+                                    <h2>Backend-разработка</h2>
+                                    <img src="../svg/cross.svg" alt="cross" class="services__accordeon-cross">
+                                </div>
+                                <div class="services__accordeon-content-wrapper services__backend">
+                                    <div class="accordeon__title-wrapper">
+                                        <h3>Backend-разработка</h3>
+                                        <img src="../svg/Ellipse36.svg" alt="services">
+                                    </div>
+                                    <p>Мы создаем исключительный
+                                        дизайн, такой какой вы вряд-ли
+                                        где-то найдете, потому что команда
+                                        наших профессионалов создаст
+                                        нечто новое, необычное и то, чем
+                                        вы точно будете довольны!</p>
+                                    <a href="#" class="standart__btn-link services__btn-project">Проекты</a>
+                                </div>
+                            </div>
+                            <div class="services__accordeon-item-wrapper">
+                                <div class="services__accordeon-item" data-servicesTab="services__seo">
+                                    <h2>SEO-продвижение</h2>
+                                    <img src="../svg/cross.svg" alt="cross" class="services__accordeon-cross">
+                                </div>
+                                <div class="services__accordeon-content-wrapper services__seo">
+                                    <div class="accordeon__title-wrapper">
+                                        <h3>SEO-продвижение</h3>
+                                        <img src="../svg/Group284.svg" alt="services">
+                                    </div>
+                                    <p>Мы создаем исключительный
+                                        дизайн, такой какой вы вряд-ли
+                                        где-то найдете, потому что команда
+                                        наших профессионалов создаст
+                                        нечто новое, необычное и то, чем
+                                        вы точно будете довольны!</p>
+                                    <a href="#" class="standart__btn-link services__btn-project">Проекты</a>
+                                </div>
+                            </div>
+                            <div class="services__accordeon-item-wrapper">
+                                <div class="services__accordeon-item" data-servicesTab="services__smm">
+                                    <h2>SMM, SERM</h2>
+                                    <img src="../svg/cross.svg" alt="cross" class="services__accordeon-cross">
+                                </div>
+                                <div class="services__accordeon-content-wrapper services__smm">
+                                    <div class="accordeon__title-wrapper">
+                                        <h3>SMM, SERM</h3>
+                                        <img src="../svg/Group285.svg" alt="services">
+                                    </div>
+                                    <p>Мы создаем исключительный
+                                        дизайн, такой какой вы вряд-ли
+                                        где-то найдете, потому что команда
+                                        наших профессионалов создаст
+                                        нечто новое, необычное и то, чем
+                                        вы точно будете довольны!</p>
+                                    <a href="#" class="standart__btn-link services__btn-project">Проекты</a>
+                                </div>
+                            </div>
+                            <div class="services__accordeon-item-wrapper">
+                                <div class="services__accordeon-item" data-servicesTab="services__gameDevelopment">
+                                    <h2>Разработка игр</h2>
+                                    <img src="../svg/cross.svg" alt="cross" class="services__accordeon-cross">
+                                </div>
+                                <div class="services__accordeon-content-wrapper services__gameDevelopment">
+                                    <div class="accordeon__title-wrapper">
+                                        <h3>Разработка игр</h3>
+                                        <img src="../svg/Group287.svg" alt="services">
+                                    </div>
+                                    <p>Мы создаем исключительный
+                                        дизайн, такой какой вы вряд-ли
+                                        где-то найдете, потому что команда
+                                        наших профессионалов создаст
+                                        нечто новое, необычное и то, чем
+                                        вы точно будете довольны!</p>
+                                    <a href="#" class="standart__btn-link services__btn-project">Проекты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                    <h2 class="advantages__title title">Нам доверяют свои <span class="gradient-word-first">идеи</span>
+                        потому, что мы их выполним</h2>
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <img src="../svg/control.svg" alt="advantages">
+                            <h3 class="advantages__item-title">Контроль</h3>
+                            <p>Мы информируем вас о каждом этапе рыботы, вы будете посвящены в каждую мелочь и тем
+                                самым получите именно то, что вы хотели получить!</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="../svg/Black.svg" alt="advantages">
+                            <h3 class="advantages__item-title">Адаптация</h3>
+                            <p>Независимо от ваших возможностей и желаний, мы готовы работать с каждым на его
+                                условиях. Наша команда всегда открыта к обсуждению!</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="../svg/warranty.svg" alt="advantages">
+                            <h3 class="advantages__item-title">Гарантии</h3>
+                            <p>На любой наш продукт мы обещаем вам пожизненную гарантию. А это значит, что при любых
+                                обстоятельствах мы исправим свои ошибки!</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="../svg/control.svg" alt="advantages">
+                            <h3 class="advantages__item-title">Контроль</h3>
+                            <p>Мы информируем вас о каждом этапе рыботы, вы будете посвящены в каждую мелочь и тем
+                                самым получите именно то, что вы хотели получить!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="reviews__title subtitle">Что о нас <span class="gradient-word-two">говорят?</span></h2>
+                    <div class="reviews__slider mySwiper">
+                        <div class="reviews__slider-wrapper swiper-wrapper">
+                            <div class="reviews__slider-item swiper-slide">
+                                <div class="reviews__item-rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                </div>
+                                <div class="reviews__item-text">
+                                    <h4 class="reviews__item-title">Компания Astana Com</h4>
+                                    <p class="reviews__item-subtitle">Разработка <span
+                                            class="gradient-word-first">веб-сайта</span></p>
+                                </div>
+                                <p>Благодарим команду “Wow-company” за выполненную работу. Сотрудничая с самого нуля, мы
+                                    получили именно то, что действительно хотели видеть. С удовольствием будем работать
+                                    с даннной компанией снова!</p>
+                                <img src="../img/Frame74.png" alt="company logo" class="reviews__slider-company_logo">
+                            </div>
+                            <div class="reviews__slider-item swiper-slide">
+                                <div class="reviews__item-rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                </div>
+                                <div class="reviews__item-text">
+                                    <h4 class="reviews__item-title">Компания Astana Com</h4>
+                                    <p class="reviews__item-subtitle">Разработка <span
+                                            class="gradient-word-first">веб-сайта</span></p>
+                                </div>
+                                <p>Благодарим команду “Wow-company” за выполненную работу. Сотрудничая с самого нуля, мы
+                                    получили именно то, что действительно хотели видеть. С удовольствием будем работать
+                                    с даннной компанией снова!</p>
+                                <img src="../img/Frame74.png" alt="company logo" class="reviews__slider-company_logo">
+                            </div>
+                            <div class="reviews__slider-item swiper-slide">
+                                <div class="reviews__item-rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                </div>
+                                <div class="reviews__item-text">
+                                    <h4 class="reviews__item-title">Компания Astana Com</h4>
+                                    <p class="reviews__item-subtitle">Разработка <span
+                                            class="gradient-word-first">веб-сайта</span></p>
+                                </div>
+                                <p>Благодарим команду “Wow-company” за выполненную работу. Сотрудничая с самого нуля, мы
+                                    получили именно то, что действительно хотели видеть. С удовольствием будем работать
+                                    с даннной компанией снова!</p>
+                                <img src="../img/Frame74.png" alt="company logo" class="reviews__slider-company_logo">
+                            </div>
+                            <div class="reviews__slider-item swiper-slide">
+                                <div class="reviews__item-rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                </div>
+                                <div class="reviews__item-text">
+                                    <h4 class="reviews__item-title">Компания Astana Com</h4>
+                                    <p class="reviews__item-subtitle">Разработка <span
+                                            class="gradient-word-first">веб-сайта</span></p>
+                                </div>
+                                <p>Благодарим команду “Wow-company” за выполненную работу. Сотрудничая с самого нуля, мы
+                                    получили именно то, что действительно хотели видеть. С удовольствием будем работать
+                                    с даннной компанией снова!</p>
+                                <img src="../img/Frame74.png" alt="company logo" class="reviews__slider-company_logo">
+                            </div>
+                            <div class="reviews__slider-item swiper-slide">
+                                <div class="reviews__item-rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                </div>
+                                <div class="reviews__item-text">
+                                    <h4 class="reviews__item-title">Компания Astana Com</h4>
+                                    <p class="reviews__item-subtitle">Разработка <span
+                                            class="gradient-word-first">веб-сайта</span></p>
+                                </div>
+                                <p>Благодарим команду “Wow-company” за выполненную работу. Сотрудничая с самого нуля, мы
+                                    получили именно то, что действительно хотели видеть. С удовольствием будем работать
+                                    с даннной компанией снова!</p>
+                                <img src="../img/Frame74.png" alt="company logo" class="reviews__slider-company_logo">
+                            </div>
+                            <div class="reviews__slider-item swiper-slide">
+                                <div class="reviews__item-rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                    <img src="../svg/fi-br-star.svg" alt="rating">
+                                </div>
+                                <div class="reviews__item-text">
+                                    <h4 class="reviews__item-title">Компания Astana Com</h4>
+                                    <p class="reviews__item-subtitle">Разработка <span
+                                            class="gradient-word-first">веб-сайта</span></p>
+                                </div>
+                                <p>Благодарим команду “Wow-company” за выполненную работу. Сотрудничая с самого нуля, мы
+                                    получили именно то, что действительно хотели видеть. С удовольствием будем работать
+                                    с даннной компанией снова!</p>
+                                <img src="../img/Frame74.png" alt="company logo" class="reviews__slider-company_logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback feedback-decor">
+                <div class="container">
+                    <h2 class="feedback__title title">Мы читаем ваши <span class="gradient-word-two">заявки</span>
+                        быстрее чем вы их пишете!</h2>
+                    <h3 class="feedback__subtitle subtitle">Остались <span class="gradient-word-first">вопросы?</span>
+                    </h3>
+                    <form action="#" class="feedback__form">
+                        <div class="feedback__personality">
+                            <div class="feedback__personality-container feedback__personality-one">
+                                <div class="input-container">
+                                    <label for="name" class="input-label">*Введите ваше имя</label>
+                                    <input type="text" placeholder="Имя"
+                                        class="feedback__name feedback__personality-input" id="name" autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="surname" class="input-label">*Введите вашу фамилию</label>
+                                    <input type="text" placeholder="Фамилия"
+                                        class="feedback__surname feedback__personality-input" id="surname"
+                                        autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="email" class="input-label">*Введите ваш e-mail</label>
+                                    <input type="email" placeholder="E-mail"
+                                        class="feedback__email feedback__personality-input" id="email"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="feedback__personality-container feedback__personality-two">
+                                <div class="input-container">
+                                    <label for="phone" class="input-label">*Введите ваш номер телефона</label>
+                                    <input type="tel" placeholder="Телефон"
+                                        class="feedback__phone feedback__personality-input" id="phone"
+                                        autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="telegram" class="input-label">*Введите ваш telegram nickname</label>
+                                    <input type="text" placeholder="Ваш telegram"
+                                        class="feedback__telegram feedback__personality-input" id="telegram"
+                                        autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="country" class="input-label">*Введите вашу страну</label>
+                                    <input type="text" placeholder="Страна"
+                                        class="feedback__country feedback__personality-input" id="country"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-container input-container__services">
+                            <label for="service" class="input-label">*Расскажите о вашем заказе</label>
+                            <input type="text" class="feedback__services feedback__personality-input" id="service"
+                                autocomplete="off" placeholder="Выскажитесь по полной!">
+                        </div>
+                        <div class="input-container input__wrapper input__wrapper-file">
+                            <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon"
+                                        src="../svg/Black2.svg" alt="Выбрать файл"></span>
+                                <span class="input__file-button-text">Прикрепить бриф или ТЗ</span>
+                            </label>
+                        </div>
+                        <div class="input-container__select select__arrow">
+                            <div class="input-label">*Расскажите, откуда вы узнали о “WOW”</div>
+                            <select name="feedback__select" id="feedback__select" class="feedback__select">
+                                <option value="Нашел в интернете" disabled selected>Где вы нашли нас?</option>
+                                <option value="Нашел в интернете">Нашел в интернете</option>
+                                <option value="Реклама">Реклама</option>
+                                <option value="Порекомендовал друг">Порекомендовал друг</option>
+                            </select>
+                        </div>
+                        <div class="checkbox-container">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox" class="feedback__checkbox">
+                            </div>
+                            <label for="checkbox" class="checkbox__label">Я согласен со всеми правилами и всем
+                                остальным, что там надо</label>
+                        </div>
+                        <button type="submit" class="standart__btn-link">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-container">
+                <img src="../svg/logo.svg" class="footer__logo" alt="logo">
+            </div>
+            <div class="container">
+                <nav class="footer__nav">
+                    <ul class="footer__nav-items">
+                        <li class="footer__nav-item">
+                            <h3 class="footer__nav-title">Услуги</h3>
+                        </li>
+                        <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Дизайн</a></li>
+                        <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">SEO-продвижение</a>
+                        </li>
+                        <li class="footer__nav-item underline"><a href="#"
+                                class="footer__nav-link">Frontend-разработка</a></li>
+                        <li class="footer__nav-item underline"><a href="#"
+                                class="footer__nav-link">Backend-разработка</a></li>
+                    </ul>
+                    <ul class="footer__nav-items">
+                        <li class="footer__nav-item">
+                            <h3 class="footer__nav-title">Меню</h3>
+                        </li>
+                        <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">О компании</a></li>
+                        <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Сотрудникам</a></li>
+                        <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Порфтолио</a></li>
+                        <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Контакты</a></li>
+                    </ul>
+                    <ul class="footer__nav-items">
+                        <li class="footer__nav-item">
+                            <h3 class="footer__nav-title">Связь с нами</h3>
+                        </li>
+                        <li class="footer__nav-item underline"><a href="mailto:namelesssyes@gmail.com"
+                                class="footer__nav-link">namelesssyes@gmail.com</a></li>
+                        <li class="footer__nav-item underline"><a href="tel:+375447965103" class="footer__nav-link">A1
+                                +375 (44)
+                                796-51-03</a></li>
+                        <li class="footer__nav-item underline"><a href="tel:+375257039154" class="footer__nav-link">life
+                                +375 (25)
+                                703-91-54</a></li>
+                        <li class="footer__nav-item"><a href="https://maps.app.goo.gl/iEGMQkMQWpxwodFWA"
+                                class="footer__nav-link" target="_blank">
+                                <address class="underline">г. Минск, Республика <br>
+                                    Беларусь</address>
+                            </a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav-sns">
+                    <ul class="footer__sns-items">
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/social.svg" alt="sns">
+                                <span class="footer__sns-text">Telegram</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/socialinst.svg" alt="sns">
+                                <span class="footer__sns-text">Instagram</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/sociallinkedin.svg" alt="sns">
+                                <span class="footer__sns-text">LinkedIn</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/socialvk.svg" alt="sns">
+                                <span class="footer__sns-text">VKontakte</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/socialwatsapp.svg" alt="sns">
+                                <span class="footer__sns-text">WhatsApp</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__copyright">© 2023 WOW</div>
+        </footer>
+    </div>
+    <script src="../libs/gsap.min.js"></script>
+    <script src="../libs/scrollTriger.min.js"></script>
+    <script src="../libs/swiper.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

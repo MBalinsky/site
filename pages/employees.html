@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <div class="header__line">
+                        <div class="header__leftComponent">
+                            <div class="header__burger-container">
+                                <div class="header__burger">
+                                    <div class="header__burgerLine header__burgerLine-first"></div>
+                                    <div class="header__burgerLine header__burgerLine-second"></div>
+                                    <div class="header__burgerLine header__burgerLine-third"></div>
+                                </div>
+                            </div>
+                            <a href="./main.html" class="header__logo">
+                                <img src="../svg/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-item underline"><a href="./main.html" class="nav__link">О нас</a></li>
+                            <li class="nav-item underline active-link"><a href="#" class="nav__link">Сотрудникам</a></li>
+                            <li class="nav-item underline"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+                            <li class="nav-item underline"><a href="./contacts.html" class="nav__link">Контакты</a></li>
+                        </ul>
+                        <div class="header__rightComponent">
+                            <button class="standart__btn-link charity-btn">Благотворительность</button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="burger-popup"></div>
+                <div class="burger">
+                    <div class="burger__container">
+                        <a href="#" class="logo__burger">
+                            <img src="../svg/logo.svg" alt="logo menu">
+                        </a>
+                        <img src="../svg/Group280.svg" alt="cross" class="burger__cross">
+                    </div>
+                    <nav class="burger__nav">
+                        <ul class="burger__items">
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">
+                                    <div class="burger__items-link-text"><span class="gradient-word-first">Кто</span> мы
+                                        такие? </div>
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">Услуги <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div></a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">Преимущества <div
+                                        class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">
+                                    <div class="burger__items-link-text"><span class="gradient-word-first">Что</span> о
+                                        нас говорят? </div>
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">Сотрудникам <div
+                                        class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">Портфолио <div
+                                        class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two"><span
+                                        class="gradient-word-first">Контакты</span>
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                        </ul>
+                        <div class="burger__buttons">
+                            <button
+                                class="standart-button burger__button-info burger__button-info-1">Благотворительность</button>
+                            <a href="#"
+                                class="standart__btn-link burger__button-info burger__button-info-2">Связаться</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="employees-main">
+                <div class="container">
+                    <div class="employees-main__content">
+                        <div class="employees-main__components components-animation">
+                            <h1 class="employees-main__title title">
+                                <span class="gradient-word-first">Присоединяйся</span> к тем, <br>
+                                кого ты давно искал!
+                            </h1>
+                            <button class="standart__btn-link employees-main__button">Связаться</button>
+                        </div>
+                    </div>
+                    <img src="../svg/group(2).svg" alt="decor" class="employees-main__decor employees-main__decor1">
+                    <img src="../svg/Mask-group.svg" alt="decor" class="employees-main__decor employees-main__decor2">
+                    <img src="../svg/Maskgroup(1).svg" alt="decor" class="employees-main__decor employees-main__decor3">
+                </div>
+            </section>
+            <section class="whatdoweoffer">
+                <div class="container">
+                    <h2 class="whatdoweoffer__title subtitle">Что мы <span
+                            class="gradient-word-first">предлагаем?</span></h2>
+                    <p>Мы небольшая IT-компания, что занимается разработкой софта для вашего бизнеса. Может мы и не
+                        лучшие в своём деле, но это только пока. Обратись к нам и возможно для тебя мы станем идеальным
+                        решением. Мы предоставляем невероятно выгодные условия для клиентов, так как готовы
+                        постраиваться под любого нашего заказчика. Главным для нас является помочь вам в вашем деле!</p>
+                </div>
+            </section>
+            <section class="whoisneeded">
+                <div class="container">
+                    <h2 class="whoisneeded__title title">
+                        Благодаря вашим <span class="gradient-word-first">умениям</span>
+                        создаём настоящие чудеса!
+                    </h2>
+                    <div class="whoisneeded__content">
+                        <div class="whoisneeded__tabs">
+                            <div class="whoisneeded__tabs-item whoisneeded__tabs-item--active"
+                                data-whoisneeded-tabs="whoisneeded__design">
+                                <img src="../svg/Black(2).svg" alt="vacancies photo" class="whoisneeded__item-img">
+                                <h3 class="whoisneeded__subtitle">Дизайн</h3>
+                            </div>
+                            <div class="whoisneeded__tabs-item" data-whoisneeded-tabs="whoisneeded__frontend">
+                                <img src="../svg/Black(3).svg" alt="vacancies photo" class="whoisneeded__item-img">
+                                <h3 class="whoisneeded__subtitle">Front-end</h3>
+                            </div>
+                            <div class="whoisneeded__tabs-item" data-whoisneeded-tabs="whoisneeded__backend">
+                                <img src="../svg/Black(4).svg" alt="vacancies photo" class="whoisneeded__item-img">
+                                <h3 class="whoisneeded__subtitle">Back-end</h3>
+                            </div>
+                            <div class="whoisneeded__tabs-item" data-whoisneeded-tabs="whoisneeded__seo">
+                                <img src="../svg/Black(5).svg" alt="vacancies photo" class="whoisneeded__item-img">
+                                <h3 class="whoisneeded__subtitle">SEO</h3>
+                            </div>
+                            <div class="whoisneeded__tabs-item" data-whoisneeded-tabs="whoisneeded__smm">
+                                <img src="../svg/Black(6).svg" alt="vacancies photo" class="whoisneeded__item-img">
+                                <h3 class="whoisneeded__subtitle">SMM, SERM</h3>
+                            </div>
+                            <div class="whoisneeded__tabs-item" data-whoisneeded-tabs="whoisneeded__game">
+                                <img src="../svg/Black(7).svg" alt="vacancies photo" class="whoisneeded__item-img">
+                                <h3 class="whoisneeded__subtitle">GameDev</h3>
+                            </div>
+                        </div>
+                        <div
+                            class="whoisneeded__vacancies-items whoisneeded__vacancies-items--active whoisneeded__design">
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                        </div>
+                        <div class="whoisneeded__vacancies-items whoisneeded__frontend">
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                        </div>
+                        <div class="whoisneeded__vacancies-items whoisneeded__backend">
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                        </div>
+                        <div class="whoisneeded__vacancies-items whoisneeded__seo">
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                        </div>
+                        <div class="whoisneeded__vacancies-items whoisneeded__smm">
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                        </div>
+                        <div class="whoisneeded__vacancies-items whoisneeded__game">
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                            <div class="whoisneeded__vacancies-item">
+                                <img src="../svg/Teal.svg" alt="vacancies item"
+                                    class="whoisneeded__vacancies-items-img">
+                                <h3 class="whoisneeded__vacancies-item-title">React.js</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback feedback-decor employees__feedback">
+                <div class="container">
+                    <h2 class="feedback__title employees__feedback-title title">Мы обязательно рассмотрим
+                        ваши <span class="gradient-word-first">заявки!</span></h2>
+                    <h3 class="feedback__subtitle subtitle">Ждём ваших <span
+                            class="gradient-word-first">заявок!</span>
+                    </h3>
+                    <form action="#" class="feedback__form">
+                        <div class="feedback__personality">
+                            <div class="feedback__personality-container feedback__personality-one">
+                                <div class="input-container">
+                                    <label for="name" class="input-label">*Введите ваше имя</label>
+                                    <input type="text" placeholder="Имя"
+                                        class="feedback__name feedback__personality-input" id="name" autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="surname" class="input-label">*Введите вашу фамилию</label>
+                                    <input type="text" placeholder="Фамилия"
+                                        class="feedback__surname feedback__personality-input" id="surname"
+                                        autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="email" class="input-label">*Введите ваш e-mail</label>
+                                    <input type="email" placeholder="E-mail"
+                                        class="feedback__email feedback__personality-input" id="email"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="feedback__personality-container feedback__personality-two">
+                                <div class="input-container">
+                                    <label for="phone" class="input-label">*Введите ваш номер телефона</label>
+                                    <input type="tel" placeholder="Телефон"
+                                        class="feedback__phone feedback__personality-input" id="phone"
+                                        autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="telegram" class="input-label">*Введите ваш telegram nickname</label>
+                                    <input type="text" placeholder="Ваш telegram"
+                                        class="feedback__telegram feedback__personality-input" id="telegram"
+                                        autocomplete="off">
+                                </div>
+                                <div class="input-container">
+                                    <label for="country" class="input-label">*Введите ваш telegram nickname</label>
+                                    <input type="text" placeholder="Страна"
+                                        class="feedback__country feedback__personality-input" id="country"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-container input-container__services employees__form-stack">
+                            <label for="service" class="input-label">*Напишите ваш стек технологий</label>
+                            <input type="text" class="feedback__services feedback__personality-input" id="service"
+                                autocomplete="off" placeholder="Выскажитесь по полной!">
+                        </div>
+                        <div class="input-container__select select__arrow">
+                            <div class="input-label">*Расскажите, откуда вы узнали о “WOW”</div>
+                            <select name="feedback__select" id="feedback__select" class="feedback__select">
+                                <option value="Нашел в интернете" disabled selected>Где вы нашли нас?</option>
+                                <option value="Нашел в интернете">Нашел в интернете</option>
+                                <option value="Реклама">Реклама</option>
+                                <option value="Порекомендовал друг">Порекомендовал друг</option>
+                            </select>
+                        </div>
+                        <div class="checkbox-container">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox" class="feedback__checkbox">
+                            </div>
+                            <label for="checkbox" class="checkbox__label">Я согласен со всеми правилами и всем
+                                остальным, что там надо</label>
+                        </div>
+                        <button type="submit" class="standart__btn-link">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-container">
+              <img src="../svg/logo.svg" class="footer__logo" alt="logo">
+            </div>  
+              <div class="container">
+                  <nav class="footer__nav">
+                      <ul class="footer__nav-items">
+                          <li class="footer__nav-item">
+                              <h3 class="footer__nav-title">Услуги</h3>
+                          </li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Дизайн</a></li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">SEO-продвижение</a></li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Frontend-разработка</a></li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Backend-разработка</a></li>
+                      </ul>
+                      <ul class="footer__nav-items">
+                          <li class="footer__nav-item">
+                              <h3 class="footer__nav-title">Меню</h3>
+                          </li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">О компании</a></li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Сотрудникам</a></li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Порфтолио</a></li>
+                          <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Контакты</a></li>
+                      </ul>
+                      <ul class="footer__nav-items">
+                          <li class="footer__nav-item">
+                              <h3 class="footer__nav-title">Связь с нами</h3>
+                          </li>
+                          <li class="footer__nav-item underline"><a href="mailto:namelesssyes@gmail.com"
+                                  class="footer__nav-link">namelesssyes@gmail.com</a></li>
+                          <li class="footer__nav-item underline"><a href="tel:+375447965103" class="footer__nav-link">A1 +375 (44)
+                                  796-51-03</a></li>
+                          <li class="footer__nav-item underline"><a href="tel:+375257039154" class="footer__nav-link">life +375 (25)
+                                  703-91-54</a></li>
+                          <li class="footer__nav-item"><a href="https://maps.app.goo.gl/iEGMQkMQWpxwodFWA"
+                                  class="footer__nav-link" target="_blank">
+                                  <address class="underline">г. Минск, Республика <br>
+                                      Беларусь</address>
+                              </a></li>
+                      </ul>
+                  </nav>
+                  <nav class="footer__nav-sns">
+                      <ul class="footer__sns-items">
+                          <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                  <img src="../svg/social.svg" alt="sns">
+                                  <span class="footer__sns-text">Telegram</span>
+                              </a></li>
+                          <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                  <img src="../svg/social.svg" alt="sns">
+                                  <span class="footer__sns-text">Telegram</span>
+                              </a></li>
+                          <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                  <img src="../svg/social.svg" alt="sns">
+                                  <span class="footer__sns-text">Telegram</span>
+                              </a></li>
+                          <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                  <img src="../svg/social.svg" alt="sns">
+                                  <span class="footer__sns-text">Telegram</span>
+                              </a></li>
+                          <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                  <img src="../svg/social.svg" alt="sns">
+                                  <span class="footer__sns-text">Telegram</span>
+                              </a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="footer__copyright">© 2023 WOW</div>
+          </footer>
+    </div>
+    <script src="../libs/gsap.min.js"></script>
+    <script src="../libs/scrollTriger.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

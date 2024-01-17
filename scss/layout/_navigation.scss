@@ -1,0 +1,15 @@
+.header{
+    .nav-list{
+        display: flex;
+        gap: 25px;
+        font-size: 23px;
+    }
+    .nav-item{
+        font-weight: 700;
+    }
+    @media(max-width: 850px){
+        .nav-list{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.standart__btn-link{
+        display: inline-block;
+        max-width: fit-content;
+        position: relative;
+        padding: 19px 72px;
+        border: none;
+        font-size: 18px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(1, 14, 127, 1), rgba(31, 209, 249, 1), rgba(255, 255, 255, 1));
+        border-radius: 34px;
+        z-index: 1000;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: .5s;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            bottom: 3px;
+            left: 3px;
+            right: 3px;
+            border-radius: 34px;
+            background-color: $bodyColor;
+            z-index: -1;
+            transition: .5s;
+          } 
+          @media(hover: hover){
+            &:hover{
+              transform: scale(1.1);
+              transition: .5s;
+            }
+            &:hover::before{
+              opacity: .9;
+            }
+          }
+          @media (max-width: 550px) {
+            font-size: 15px;
+            width: calc(180px + 70 * (100vw - 320px) / 230);
+            padding: 13px 46px;
+          }
+      }
+

@@ -1,0 +1,24 @@
+<svg width="174" height="200" viewBox="0 0 174 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 11">
+<rect id="Rectangle 68" width="100" height="100" transform="matrix(0.866025 -0.5 0.866025 0.5 0 50)" fill="url(#paint0_linear_2006_23)"/>
+<rect id="Rectangle 70" width="100" height="100" transform="matrix(0.866025 -0.5 2.20305e-08 1 86 100)" fill="url(#paint1_linear_2006_23)"/>
+<rect id="Rectangle 69" width="100" height="100" transform="matrix(0.866025 0.5 -2.20305e-08 1 0 50)" fill="url(#paint2_radial_2006_23)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2006_23" x1="100" y1="0" x2="-6" y2="105" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1FD1F9"/>
+<stop offset="1" stop-color="#07463E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2006_23" x1="100" y1="0" x2="-6" y2="105" gradientUnits="userSpaceOnUse">
+<stop stop-color="#07463E"/>
+<stop offset="1" stop-color="#1A3281"/>
+</linearGradient>
+<radialGradient id="paint2_radial_2006_23" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.5914 68.2043) rotate(-124.471) scale(110.167 323.13)">
+<stop offset="0.00114824" stop-color="#1FD1F9"/>
+<stop offset="0.449073" stop-color="#1D8DC6"/>
+<stop offset="0.683452" stop-color="#1B559B"/>
+<stop offset="0.761579" stop-color="#1B559B"/>
+<stop offset="1" stop-color="#1B559B"/>
+</radialGradient>
+</defs>
+</svg>

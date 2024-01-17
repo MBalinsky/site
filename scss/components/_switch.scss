@@ -1,0 +1,17 @@
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    &__identifier{
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(180deg, #1FD1F9 0%, #010E7F 100%);
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
