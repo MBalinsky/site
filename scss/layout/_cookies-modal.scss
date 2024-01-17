@@ -1,0 +1,43 @@
+.cookies-modal {
+    position: fixed;
+    z-index: 9000;
+    right: 20px;
+    margin: 0 15px;
+    bottom: 5%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    border-radius: 35px;
+    box-shadow: -1px -1px 5px 1px #1FD1F9, 1px 1px 5px 1px #07463E;
+    font-weight: 700;
+    transform: translateY(150%);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+    &--active {
+        transform: translateY(0);
+        transition: .5s;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__content {
+        padding: 20px;
+    }
+    
+    &__btn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 650px) {
+    .cookies-modal {
+        left: 0;
+        right: 0;
+        margin: 0 15;
+
+        &__btn {
+            font-size: calc(15px + (3 + 3 * 0.7) * (100vw - 320px) / 650);
+        }
+    }
+}

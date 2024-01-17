@@ -1,74 +1,22 @@
-// gsap
+// cookies 
 
-// animate main sections
-gsap.registerPlugin(ScrollTrigger);
-const tl = gsap.timeline();
+const COOKIE_NAME = 'visit';
+const cookieAlert = document.querySelector('.cookies-modal');
+const cookieBtn = document.querySelector('.cookies-modal__btn');
 
-if(document.querySelector('.components-animation')){
-  tl.fromTo('.components-animation', {
-    x: -100,
-    opacity: 0,
-    visibility: "hidden",
-  }, {
-    x: 0,
-    opacity: 1,
-    duration: 1,
-    visibility: "visible",
-  }, 0.2
-  )
+if(!Cookies.get(COOKIE_NAME)){
+  setTimeout(() => {
+    cookieAlert.classList.add('cookies-modal--active');
+  }, 1000);
+
+  cookieBtn.addEventListener("click", () => {
+    cookieAlert.classList.remove('cookies-modal--active');
+    Cookies.set(COOKIE_NAME, true, {
+      expires: 5,
+    })
+  })
 }
 
-if(document.querySelector('.img-animation')){
-  tl.fromTo('.img-animation', {
-    x: 100,
-    opacity: 0,
-    visibility: "hidden",
-  }, {
-    x: 0,
-    opacity: 1,
-    duration: 1,
-    visibility: "visible",
-  }, 0.2
-  )
-}
-
-
-if(document.querySelector('.employees-main__decor')){
-  tl.fromTo('.employees-main__decor', {
-    scale: 0,
-    opacity: 0,
-  },{
-    scale: 1,
-    opacity: 1,
-    duration: 1,
-    stagger: 0.2,
-  }, 0.2)
-}
-
-if(document.querySelector('.single-project__bg')){
-  tl.fromTo('.single-project__bg', {
-    scale: 0,
-    opacity: 0,
-  },{
-    scale: 1,
-    opacity: 1,
-    duration: 1,
-  }, 0.2)
-}
-
-// animate other's section
-// gsap.to('.about-company__text', {
-//   scrollTrigger: {
-//     trigger: '.wow',
-//     markers: true,
-//     start: 'bottom center',
-//   }, 
-//   yPercent: 80,
-//   scale: 0.5,
-//   xPercent: -80,
-//   opacity: 0,
-// })
- 
 // кнопка для добавления тз или брифа
 let inputs = document.querySelectorAll('.input__file');
 

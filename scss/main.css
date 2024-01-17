@@ -373,7 +373,6 @@ html {
   font-family: "Jura", sans-serif;
   font-size: 35px;
   color: #FFFFFF;
-  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -981,7 +980,7 @@ main {
     transition: border-bottom 0.1s ease-out;
   }
   .burger .burger__cross:hover {
-    transform: scale(1.1);
+    transform: rotate(90deg);
     transition: 0.5s;
   }
   .burger .logo__burger:hover img {
@@ -1663,6 +1662,46 @@ main {
   }
   .feedback .employees__form-stack {
     margin-bottom: 40px;
+  }
+}
+.cookies-modal {
+  position: fixed;
+  z-index: 9000;
+  right: 20px;
+  margin: 0 15px;
+  bottom: 5%;
+  max-width: 600px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 35px;
+  box-shadow: -1px -1px 5px 1px #1FD1F9, 1px 1px 5px 1px #07463E;
+  font-weight: 700;
+  transform: translateY(150%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.cookies-modal--active {
+  transform: translateY(0);
+  transition: 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+.cookies-modal__content {
+  padding: 20px;
+}
+.cookies-modal__btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+  .cookies-modal {
+    left: 0;
+    right: 0;
+    margin: 0 15;
+  }
+  .cookies-modal__btn {
+    font-size: calc(15px + 5.1 * (100vw - 320px) / 650);
   }
 }
 .wow {
