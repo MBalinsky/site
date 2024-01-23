@@ -25,8 +25,47 @@
 
     &__rightComponent {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 55px;
+        justify-content: center;
+        row-gap: 5px;
+    }
+
+    &__rightComponent-content{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    .work-time{
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__messengers-wrapper{
+        row-gap: 10px;
+    }
+
+    &__messengers{
+        display: flex;
+        gap: 20px;
+        img{
+            width: 20px;
+            height: 20px;
+            transition: .5s;
+        }
+        a{
+            display: flex;
+        }
+    }
+    &__messenger-link{
+        transition: .5s;
+    }
+    &__phone-number a{
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 5px;
+        transition: .5s;
     }
 
     &__logo {
@@ -93,14 +132,15 @@
         font-size: 20px;
     }
 
-    .charity-btn {
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 10px 15px;
-    }
-
     @media (hover: hover) {
+         &__messenger-link:hover{
+            opacity: 0.8;
+            transition: .5s;
+        }
+        &__phone-number:hover a{
+            color: rgba(31, 209, 249);
+            transition: .5s;
+        }
         &__logo:hover {
             transform: scale(1.1);
             transition: .5s;
@@ -119,14 +159,14 @@
         }
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 700px) {
 
         &__rightComponent {
             display: none;
         }
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 700px) {
         &__leftComponent {
             width: 100%;
             justify-content: space-between;
@@ -466,7 +506,7 @@
             padding: 20px 46px;
         }
         .burger__button-info{
-            font-size:  calc(12px + (6 + 6 * 0.7) * (100vw - 320px) / 550);;
+            font-size: 15px;
         }
     }
 

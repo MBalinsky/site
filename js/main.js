@@ -3,8 +3,9 @@
 const COOKIE_NAME = 'visit';
 const cookieAlert = document.querySelector('.cookies-modal');
 const cookieBtn = document.querySelector('.cookies-modal__btn');
+const cookieCross = document.querySelector('.cookies-modal__cross');
 
-if(!Cookies.get(COOKIE_NAME)){
+if (!Cookies.get(COOKIE_NAME)) {
   setTimeout(() => {
     cookieAlert.classList.add('cookies-modal--active');
   }, 1000);
@@ -16,6 +17,13 @@ if(!Cookies.get(COOKIE_NAME)){
     })
   })
 }
+
+if (cookieCross) {
+  cookieCross.addEventListener('click', () => {
+    cookieAlert.classList.remove('cookies-modal--active');
+  })
+}
+
 
 // кнопка для добавления тз или брифа
 let inputs = document.querySelectorAll('.input__file');
@@ -64,7 +72,7 @@ if (isSwiper) {
 }
 
 // main accordeon
-
+const accoerdeonCrosses = document.querySelectorAll('.services .accordeon-cross');
 const mainTabItem = document.querySelector('.services__accordeon-item');
 let mainTabItems = document.querySelectorAll('.services__accordeon-item');
 let mainContentTabs = document.querySelectorAll('.services__accordeon-content-wrapper');
@@ -76,10 +84,10 @@ if (mainTabItem) {
   })
 
   function activateTab() {
-    mainTabCrosses.forEach(el => {
-      el.classList.remove('services__accordeon-cross--active');
+    accoerdeonCrosses.forEach(el => {
+      el.classList.remove('accordeon-cross--active');
     })
-    this.querySelector('.services__accordeon-cross').classList.add('services__accordeon-cross--active');
+    this.querySelector('.services .accordeon-cross').classList.add('accordeon-cross--active');
     let mainTabName = this.getAttribute('data-servicesTab');
     activateTabContent(mainTabName);
   }
@@ -96,19 +104,19 @@ if (mainTabItem) {
   }
 }
 
-function scrollToMain(){
-    mainTabItems.forEach(el => {
-      el.addEventListener("click", () => {
-        if(window.innerWidth <= 1240){
-          el.parentNode.scrollIntoView({
-            block: 'center',
-            behavior: 'smooth'
-          })
-        } else {
-          return
-        }
-      })
+function scrollToMain() {
+  mainTabItems.forEach(el => {
+    el.addEventListener("click", () => {
+      if (window.innerWidth <= 1240) {
+        el.parentNode.scrollIntoView({
+          block: 'center',
+          behavior: 'smooth'
+        })
+      } else {
+        return
+      }
     })
+  })
 }
 
 scrollToMain()
@@ -148,10 +156,10 @@ if (potfolioButtonTabs) {
 
 const lastPortfolioButtonItem = potfolioButtonTabs[potfolioButtonTabs.length - 1];
 
-function scrollToWorks(){
+function scrollToWorks() {
   potfolioButtonTabs.forEach(el => {
     el.addEventListener("click", () => {
-      if(window.innerWidth < 1230){
+      if (window.innerWidth < 1230) {
         lastPortfolioButtonItem.scrollIntoView({
           block: 'start',
           behavior: 'smooth'
@@ -224,15 +232,15 @@ if (iconBurger) {
       burgerPopup.classList.remove('burger-popup--active');
       body.style.overflow = "auto";
     })
-})
+  })
 
-window.addEventListener("click", function(e){
-  if(e.target.classList.contains('burger-popup')){
-    burger.classList.remove('burger--active');
-    burgerPopup.classList.remove('burger-popup--active');
-    body.style.overflow = "auto";
-  }
-})
+  window.addEventListener("click", function (e) {
+    if (e.target.classList.contains('burger-popup')) {
+      burger.classList.remove('burger--active');
+      burgerPopup.classList.remove('burger-popup--active');
+      body.style.overflow = "auto";
+    }
+  })
 }
 
 // header blur при скролле 
@@ -251,4 +259,51 @@ window.addEventListener("scroll", () => {
 
 
 
+// work in WOW
+const accoerdeonCross = document.querySelector('.our-idea .accordeon-cross');
+const wowWorkAccordeon = document.querySelector('.our-idea__accordeon-content');
+// const wowWorkContent = document.querySelector('.our-idea__accordeon-text');
 
+if(wowWorkAccordeon){
+  wowWorkAccordeon.addEventListener('click', () => {
+    let wowWorkAccordeonContent = wowWorkAccordeon.nextElementSibling;
+  
+    if(wowWorkAccordeonContent.style.maxHeight){
+      wowWorkAccordeonContent.style.maxHeight = null;
+      accoerdeonCross.classList.remove('accordeon-cross--active');
+    } else {
+      wowWorkAccordeonContent.style.maxHeight = wowWorkAccordeonContent.scrollHeight + 'px';
+      accoerdeonCross.classList.add('accordeon-cross--active');
+    }
+  })
+}
+
+// faq accordeon 
+
+const faqCross = document.querySelectorAll('.faq .accordeon-cross');
+const faqAccordeon = document.querySelectorAll('.faq__accordeon-title-container');
+
+if(faqAccordeon){
+  faqAccordeon.forEach(el => {
+    el.addEventListener('click', () => {
+      let faqContent = el.nextElementSibling;
+    
+      if(faqContent.style.maxHeight){
+        document.querySelectorAll('.faq__accordeon-text').forEach((el) => {
+          el.style.maxHeight = null;
+          el.style.margin = "0";
+        })
+        faqCross.forEach((el) => el.classList.remove('accordeon-cross--active'));
+      } else {
+        document.querySelectorAll('.faq__accordeon-text').forEach((el) => {
+          el.style.maxHeight = null;
+          el.style.margin = "0";
+        })
+        faqCross.forEach((el) => el.classList.remove('accordeon-cross--active'))
+        faqContent.style.maxHeight = faqContent.scrollHeight + 'px';
+        faqContent.style.margin = "0 35px 20px 35px";
+        el.querySelector('.faq .accordeon-cross').classList.add('accordeon-cross--active');
+      }
+  })
+  })
+}

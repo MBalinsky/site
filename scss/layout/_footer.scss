@@ -88,10 +88,15 @@
         column-gap: 100px;
     }
 
-    &__copyright {
+    &__copyright{
+        font-weight: 700;
+    }
+
+    .under-footer{
         text-align: center;
         padding: 20px 0;
         border-top: 3px solid #D9D9D9;
+        font-size: 20px;
     }
 
     @media(hover: hover){
@@ -185,8 +190,8 @@
         &__logo-container::after {
                 width: 30%;
             }
-        &__copyright{
-            font-size: 18px;
+        .under-footer{
+            font-size: 15px;
             padding: 13px 0;
             border-top: 2px solid #D9D9D9;
         }

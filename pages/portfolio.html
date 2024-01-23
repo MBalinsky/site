@@ -9,521 +9,662 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <div class="header__line">
-                    <div class="header__leftComponent">
-                        <div class="header__burger-container">
-                            <div class="header__burger">
-                                <div class="header__burgerLine header__burgerLine-first"></div>
-                                <div class="header__burgerLine header__burgerLine-second"></div>
-                                <div class="header__burgerLine header__burgerLine-third"></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <div class="header__line">
+                        <div class="header__leftComponent">
+                            <div class="header__burger-container">
+                                <div class="header__burger">
+                                    <div class="header__burgerLine header__burgerLine-first"></div>
+                                    <div class="header__burgerLine header__burgerLine-second"></div>
+                                    <div class="header__burgerLine header__burgerLine-third"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="header__logo">
+                                <img src="../svg/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="./main.html" class="nav__link underline">О нас</a></li>
+                            <li class="nav-item"><a href="./employees.html" class="nav__link underline">Сотрудникам</a>
+                            </li>
+                            <li class="nav-item active-link"><a href="./portfolio.html"
+                                    class="nav__link underline">Портфолио</a>
+                            </li>
+                            <li class="nav-item"><a href="./contacts.html" class="nav__link underline">Контакты</a></li>
+                        </ul>
+                        <div class="header__rightComponent">
+                            <div class="header__rightComponent-content">
+                                <h4 class="work-time">Время работы: <br> кругласуточно</h4>
+                                <div class="header__messengers-wrapper">
+                                    <ul class="header__messengers">
+                                        <li class="header__messenger"><a href="#" class="header__messenger-link"><img
+                                                    src="../svg/Black(12).svg" alt="social"></a></li>
+                                        <li class="header__messenger"><a href="#" class="header__messenger-link"><img
+                                                    src="../svg/iconwhatssapp.svg" alt="social"></a></li>
+                                        <li class="header__messenger"><a href="#" class="header__messenger-link"><img
+                                                    src="../svg/iconinst.svg" alt="social"></a></li>
+                                        <li class="header__messenger"><a href="#" class="header__messenger-link"><img
+                                                    src="../svg/iconlinkdin.svg" alt="social"></a></li>
+                                        <li class="header__messenger"><a href="#" class="header__messenger-link"><img
+                                                    src="../svg/iconvk.svg" alt="social"></a></li>
+                                    </ul>
+                                    <div class="header__phone-number">
+                                        <a href="tel:375447965103">+375(44)796-51-03</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <a href="./main.html" class="header__logo">
-                            <img src="../svg/logo.svg" alt="logo">
-                        </a>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-item underline"><a href="./main.html" class="nav__link">О нас</a></li>
-                        <li class="nav-item underline"><a href="./employees.html" class="nav__link">Сотрудникам</a></li>
-                        <li class="nav-item underline active-link"><a href="#" class="nav__link">Портфолио</a></li>
-                        <li class="nav-item underline"><a href="./contacts.html" class="nav__link">Контакты</a></li>
-                    </ul>
-                    <div class="header__rightComponent">
-                        <button class="standart__btn-link charity-btn">Благотворительность</button>
-                    </div>
-                </div>
-            </nav>
-            <div class="burger-popup"></div>
-            <div class="burger">
-                <div class="burger__container">
-                    <a href="#" class="logo__burger">
-                        <img src="../svg/logo.svg" alt="logo menu">
-                    </a>
-                    <img src="../svg/Group280.svg" alt="cross" class="burger__cross">
-                </div>
-                <nav class="burger__nav">
-                    <ul class="burger__items">
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two">
-                                <div class="burger__items-link-text"><span class="gradient-word-first">Кто</span> мы
-                                    такие? </div>
-                                <div class="arrow-6">
-                                    <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </div>
-                            </a></li>
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two">Услуги <div class="arrow-6">
-                                    <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </div></a></li>
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two">Преимущества <div
-                                    class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg></div></a></li>
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two">
-                                <div class="burger__items-link-text"><span class="gradient-word-first">Что</span> о
-                                    нас говорят? </div>
-                                <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg></div>
-                            </a></li>
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two">Сотрудникам <div
-                                    class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg></div></a></li>
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two">Портфолио <div
-                                    class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg></div></a></li>
-                        <li class="burger__item"><a href="#" class="burger__items-link underline-two"><span
-                                    class="gradient-word-first">Контакты</span>
-                                <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g>
-                                            <polygon class="arrow-6-pl"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <polygon class="arrow-6-pl-fixed"
-                                                points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
-                                            </polygon>
-                                            <path
-                                                d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
-                                            </path>
-                                        </g>
-                                    </svg></div>
-                            </a></li>
-                    </ul>
-                    <div class="burger__buttons">
-                        <button
-                            class="standart-button burger__button-info burger__button-info-1">Благотворительность</button>
-                        <a href="#"
-                            class="standart__btn-link burger__button-info burger__button-info-2">Связаться</a>
                     </div>
                 </nav>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="portfolio-main">
-            <div class="container">
-                <div class="portfolio-main__content">
-                    <div class="portfolio-main__components components-animation">
-                        <h2 class="portfolio-main__title title"><span class="gradient-word-first">WOW</span> - воплощение<br>
-                            ваших мечт
-                        </h2>
-                        <a href="#" class="standart__btn-link">Увидеть</a>
+                <div class="burger-popup"></div>
+                <div class="burger">
+                    <div class="burger__container">
+                        <a href="#" class="logo__burger">
+                            <img src="../svg/logo.svg" alt="logo menu">
+                        </a>
+                        <img src="../svg/Group280.svg" alt="cross" class="burger__cross">
                     </div>
-                    <img src="../gif/172dae237bcfc8f9e9ccf6a44d5bdbb7(7).gif" alt="animation" class="img-animation">
+                    <nav class="burger__nav">
+                        <ul class="burger__items">
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">
+                                    <div class="burger__items-link-text"><span class="gradient-word-first">Кто</span> мы
+                                        такие? </div>
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two">О нас<div
+                                        class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div></a></li>
+                            <li class="burger__item"><a href="../pages/employees.html"
+                                    class="burger__items-link underline-two">Сотрудникам
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                            <li class="burger__item"><a href="../pages/portfolio.html"
+                                    class="burger__items-link underline-two">
+                                    <div class="burger__items-link-text"><span
+                                            class="gradient-word-first">Портфолио</span></div>
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                            <li class="burger__item"><a href="./contacts.html"
+                                    class="burger__items-link underline-two">Контакты
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                            <li class="burger__item"><a href="./project.html"
+                                    class="burger__items-link underline-two">Страница проекта<div class="arrow-6"> <svg
+                                            width="18px" height="17px" viewBox="-1 0 18 17" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div></a></li>
+                            <li class="burger__item"><a href="#" class="burger__items-link underline-two"><span
+                                        class="gradient-word-first">Контакты</span>
+                                    <div class="arrow-6"> <svg width="18px" height="17px" viewBox="-1 0 18 17"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <polygon class="arrow-6-pl-fixed"
+                                                    points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+                                                </polygon>
+                                                <path
+                                                    d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </a></li>
+                        </ul>
+                        <div class="burger__buttons">
+                            <a class="standart-button burger__button-info burger__button-info-1">Благотворительность</a>
+                            <a href="#"
+                                class="standart__btn-link burger__button-info burger__button-info-2">Связаться</a>
+                        </div>
+                        <nav class="header__nav-sns">
+                            <ul class="header__sns-items">
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/social.svg" alt="sns">
+                                        <span class="header__sns-text">Telegram</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/socialinst.svg" alt="sns">
+                                        <span class="header__sns-text">Instagram</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/sociallinkedin.svg" alt="sns">
+                                        <span class="header__sns-text">LinkedIn</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/socialvk.svg" alt="sns">
+                                        <span class="header__sns-text">VKontakte</span>
+                                    </a></li>
+                                <li class="header__sns-item"><a href="#" class="header__sns-link underline">
+                                        <img src="../svg/socialwatsapp.svg" alt="sns">
+                                        <span class="header__sns-text">WhatsApp</span>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </nav>
                 </div>
             </div>
-        </section>
-        <section class="stages">
-            <div class="container">
-                <h2 class="stages__section-title subtitle">Этапы <span class="gradient-word-first">работы</span> с нами
-                </h2>
-                <ul class="stages__items">
-                    <li class="stages__item">
-                        <span class="stages__counter">01</span>
-                        <h3 class="stages__title"><span class="gradient-word-first">Обсуждение</span>
-                            проекта</h3>
-                        <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
-                            работы.</p>
-                    </li>
-                    <li class="stages__item">
-                        <span class="stages__counter">02</span>
-                        <h3 class="stages__title">Техническое
-                            <span class="gradient-word-first">задание</span>
-                        </h3>
-                        <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
-                            работы.</p>
-                    </li>
-                    <li class="stages__item">
-                        <span class="stages__counter">03</span>
-                        <h3 class="stages__title"><span class="gradient-word-first">Подписание</span>
-                            договора</h3>
-                        <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
-                            работы.</p>
-                    </li>
-                    <li class="stages__item">
-                        <span class="stages__counter">04</span>
-                        <h3 class="stages__title"><span class="gradient-word-first">Обсуждение</span>
-                            проекта</h3>
-                        <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
-                            работы.</p>
-                    </li>
-                </ul>
-                <div class="stages__button-container">
-                    <a href="./contacts.html#feedback" class="standart-button stages__button">Оставить заявку</a>
+        </header>
+        <main class="main">
+            <div class="cookies-modal">
+                <img src="../svg/Group280.svg" alt="cross" class="cookies-modal__cross">
+                <div class="cookies-modal__content">
+                    <p class="cookies-modal__text">Привет! Я ВАУ и я использую файлы <a href="#"
+                            class="gradient-word-first underline">куки</a></p>
+                    <button class="standart-button cookies-modal__btn">Окэй</button>
                 </div>
             </div>
-        </section>
-        <section class="portfolio" id="porfolio-sroll">
-            <div class="container">
-                <h2 class="portfolio__title title">Наш подход - удивляет,
-                    а наши <span class="gradient-word-first">работы</span> - восхищают!</h2>
-                <div class="portfolio__works">
-                    <div class="portfolio__work-tabs">
-                        <button class="standart__btn-link portfolio__work-tab" data-portfolioTabs="portfolio__work-design">Дизайн</button>
-                        <button class="standart-button portfolio__work-tab" data-portfolioTabs="portfolio__work-frontend">Front-end</button>
-                        <button class="standart__btn-link portfolio__work-tab" data-portfolioTabs="portfolio__work-backend">Back-end</button>
-                        <button class="standart-button portfolio__work-tab" data-portfolioTabs="portfolio__work-seo">SEO</button>
-                        <button class="standart__btn-link portfolio__work-tab" data-portfolioTabs="portfolio__work-smm">SMM</button>
-                        <button class="standart-button portfolio__work-tab portfolio__work-tab--active all-projectTabs" data-portfolioTabs="portfolio__work-allProjects">Все
-                            проекты</button>
-                        <button class="standart__btn-link portfolio__work-tab" data-portfolioTabs="portfolio__work-games">Игры</button>
+            <section class="portfolio-main">
+                <div class="container">
+                    <h4 class="work-time__section">Кругласуточная консультация</h4>
+                    <div class="portfolio-main__content">
+                        <div class="portfolio-main__components components-animation">
+                            <h2 class="portfolio-main__title title"><span class="gradient-word-first">WOW</span> -
+                                воплощение<br>
+                                ваших мечт
+                            </h2>
+                            <a href="#" class="standart__btn-link">Увидеть</a>
+                        </div>
+                        <img src="../gif/51e2e2e2491eaf186d454323921712a7(1).gif" alt="animation" class="img-animation">
                     </div>
-                    <div class="portfolio__work-projects portfolio__work-design">
-                        <a href="./project.html" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
+                    <div class="important-information">
+                        <a href="./main.html#prices" class="important-information__container">Прайс лист
+                            <svg class="arrow-3-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <g fill="none" stroke="#337AB7" stroke-width="1.5" stroke-linejoin="round"
+                                    stroke-miterlimit="10">
+                                    <circle class="arrow-3-iconcircle" cx="16" cy="16" r="15.12"></circle>
+                                    <path class="arrow-3-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                    </path>
+                                </g>
+                            </svg>
                         </a>
-                        <a href="" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                    </div>
-                    <div class="portfolio__work-projects portfolio__work-frontend">
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a><a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                    </div>
-                    <div class="portfolio__work-projects portfolio__work-backend">
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                    </div>
-                    <div class="portfolio__work-projects portfolio__work-seo">
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a><a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                    </div>
-                    <div class="portfolio__work-projects portfolio__work-smm">
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                    </div>
-                    <div class="portfolio__work-projects portfolio__work-allProjects portfolio__work-projects--active">
-                        <a href="./project.html" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="./project.html" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                    </div>
-                    <div class="portfolio__work-projects portfolio__work-games">
-                        <a href="./project.html" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a><a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
-                        </a>
-                        <a href="#" class="portfolio__work-project">
-                            <h3 class="portfolio__work-title">AAA FINANCE</h3>
-                            <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
-                            <img src="../img/photo_5413881739639640107_y1.png" alt="project" class="portfolio__work-img">
-                            <div class="standart-button portfolio__work-btn">Подробнее</div>
+                        <a href="./main.html#company-idea" class="important-information__container">Отличие от
+                            конкурентов
+                            <svg class="arrow-3-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <g fill="none" stroke="#337AB7" stroke-width="1.5" stroke-linejoin="round"
+                                    stroke-miterlimit="10">
+                                    <circle class="arrow-3-iconcircle" cx="16" cy="16" r="15.12"></circle>
+                                    <path class="arrow-3-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                    </path>
+                                </g>
+                            </svg>
                         </a>
                     </div>
                 </div>
+            </section>
+            <section class="stages">
+                <div class="container">
+                    <h2 class="stages__section-title subtitle">Этапы <span class="gradient-word-first">работы</span> с
+                        нами
+                    </h2>
+                    <ul class="stages__items">
+                        <li class="stages__item">
+                            <span class="stages__counter">01</span>
+                            <h3 class="stages__title"><span class="gradient-word-first">Обсуждение</span>
+                                проекта</h3>
+                            <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
+                                работы.</p>
+                        </li>
+                        <li class="stages__item">
+                            <span class="stages__counter">02</span>
+                            <h3 class="stages__title">Техническое
+                                <span class="gradient-word-first">задание</span>
+                            </h3>
+                            <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
+                                работы.</p>
+                        </li>
+                        <li class="stages__item">
+                            <span class="stages__counter">03</span>
+                            <h3 class="stages__title"><span class="gradient-word-first">Подписание</span>
+                                договора</h3>
+                            <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
+                                работы.</p>
+                        </li>
+                        <li class="stages__item">
+                            <span class="stages__counter">04</span>
+                            <h3 class="stages__title"><span class="gradient-word-first">Обсуждение</span>
+                                проекта</h3>
+                            <p>Обсуждение с вами задачи. Введение команды в курс дела. Предварительная оценка количества
+                                работы.</p>
+                        </li>
+                    </ul>
+                    <div class="stages__button-container">
+                        <a href="./contacts.html#feedback" class="standart-button stages__button">Оставить заявку</a>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio" id="porfolio-sroll">
+                <div class="container">
+                    <h2 class="portfolio__title title">Наш подход - удивляет,
+                        а наши <span class="gradient-word-first">работы</span> - восхищают!</h2>
+                    <div class="portfolio__works">
+                        <div class="portfolio__work-tabs">
+                            <button class="standart__btn-link portfolio__work-tab"
+                                data-portfolioTabs="portfolio__work-design">Дизайн</button>
+                            <button class="standart-button portfolio__work-tab"
+                                data-portfolioTabs="portfolio__work-frontend">Front-end</button>
+                            <button class="standart__btn-link portfolio__work-tab"
+                                data-portfolioTabs="portfolio__work-backend">Back-end</button>
+                            <button class="standart-button portfolio__work-tab"
+                                data-portfolioTabs="portfolio__work-seo">SEO</button>
+                            <button class="standart__btn-link portfolio__work-tab"
+                                data-portfolioTabs="portfolio__work-smm">SMM</button>
+                            <button
+                                class="standart-button portfolio__work-tab portfolio__work-tab--active all-projectTabs"
+                                data-portfolioTabs="portfolio__work-allProjects">Все
+                                проекты</button>
+                            <button class="standart__btn-link portfolio__work-tab"
+                                data-portfolioTabs="portfolio__work-games">Игры</button>
+                        </div>
+                        <div class="portfolio__work-projects portfolio__work-design">
+                            <a href="./project.html" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                        <div class="portfolio__work-projects portfolio__work-frontend">
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a><a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                        <div class="portfolio__work-projects portfolio__work-backend">
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                        <div class="portfolio__work-projects portfolio__work-seo">
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a><a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                        <div class="portfolio__work-projects portfolio__work-smm">
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                        <div
+                            class="portfolio__work-projects portfolio__work-allProjects portfolio__work-projects--active">
+                            <a href="./project.html" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="./project.html" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                        <div class="portfolio__work-projects portfolio__work-games">
+                            <a href="./project.html" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a><a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                            <a href="#" class="portfolio__work-project">
+                                <h3 class="portfolio__work-title">AAA FINANCE</h3>
+                                <h4 class="portfolio__work-subtitle">Front-end - разработка</h4>
+                                <img src="../img/photo_5413881739639640107_y1.png" alt="project"
+                                    class="portfolio__work-img">
+                                <div class="standart-button portfolio__work-btn">Подробнее</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="result">
+                <div class="container">
+                    <h2 class="result__title title">Работа с нами - это <br> <span class="gradient-word-first">
+                            гарантированный</span> <br> результат</h2>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-container">
+                <img src="../svg/logo.svg" class="footer__logo" alt="logo">
             </div>
-        </section>
-        <section class="result">
             <div class="container">
-                <h2 class="result__title title">Работа с нами - это <br> <span class="gradient-word-first">
-                        гарантированный</span> <br> резульатат</h2>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-items">
+                        <li class="footer__nav-item">
+                            <h3 class="footer__nav-title">Услуги</h3>
+                        </li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link underline">Дизайн</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link underline">SEO-продвижение</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="#"
+                                class="footer__nav-link underline">Frontend-разработка</a></li>
+                        <li class="footer__nav-item"><a href="#"
+                                class="footer__nav-link underline">Backend-разработка</a></li>
+                    </ul>
+                    <ul class="footer__nav-items">
+                        <li class="footer__nav-item">
+                            <h3 class="footer__nav-title">Меню</h3>
+                        </li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link underline">О компании</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link underline">Сотрудникам</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link underline">Порфтолио</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link underline">Контакты</a></li>
+                    </ul>
+                    <ul class="footer__nav-items">
+                        <li class="footer__nav-item">
+                            <h3 class="footer__nav-title">Связь с нами</h3>
+                        </li>
+                        <li class="footer__nav-item"><a href="mailto:namelesssyes@gmail.com"
+                                class="footer__nav-link underline">namelesssyes@gmail.com</a></li>
+                        <li class="footer__nav-item"><a href="tel:+375447965103" class="footer__nav-link underline">A1
+                                +375 (44)
+                                796-51-03</a></li>
+                        <li class="footer__nav-item"><a href="tel:+375257039154" class="footer__nav-link underline">life
+                                +375 (25)
+                                703-91-54</a></li>
+                        <li class="footer__nav-item"><a href="https://maps.app.goo.gl/iEGMQkMQWpxwodFWA"
+                                class="footer__nav-link" target="_blank">
+                                <address class="underline">г. Минск, Республика <br>
+                                    Беларусь</address>
+                            </a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav-sns">
+                    <ul class="footer__sns-items">
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/social.svg" alt="sns">
+                                <span class="footer__sns-text">Telegram</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/socialinst.svg" alt="sns">
+                                <span class="footer__sns-text">Instagram</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/sociallinkedin.svg" alt="sns">
+                                <span class="footer__sns-text">LinkedIn</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/socialvk.svg" alt="sns">
+                                <span class="footer__sns-text">VKontakte</span>
+                            </a></li>
+                        <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
+                                <img src="../svg/socialwatsapp.svg" alt="sns">
+                                <span class="footer__sns-text">WhatsApp</span>
+                            </a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__logo-container">
-          <img src="../svg/logo.svg" class="footer__logo" alt="logo">
-        </div>  
-          <div class="container">
-              <nav class="footer__nav">
-                  <ul class="footer__nav-items">
-                      <li class="footer__nav-item">
-                          <h3 class="footer__nav-title">Услуги</h3>
-                      </li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Дизайн</a></li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">SEO-продвижение</a></li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Frontend-разработка</a></li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Backend-разработка</a></li>
-                  </ul>
-                  <ul class="footer__nav-items">
-                      <li class="footer__nav-item">
-                          <h3 class="footer__nav-title">Меню</h3>
-                      </li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">О компании</a></li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Сотрудникам</a></li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Порфтолио</a></li>
-                      <li class="footer__nav-item underline"><a href="#" class="footer__nav-link">Контакты</a></li>
-                  </ul>
-                  <ul class="footer__nav-items">
-                      <li class="footer__nav-item">
-                          <h3 class="footer__nav-title">Связь с нами</h3>
-                      </li>
-                      <li class="footer__nav-item underline"><a href="mailto:namelesssyes@gmail.com"
-                              class="footer__nav-link">namelesssyes@gmail.com</a></li>
-                      <li class="footer__nav-item underline"><a href="tel:+375447965103" class="footer__nav-link">A1 +375 (44)
-                              796-51-03</a></li>
-                      <li class="footer__nav-item underline"><a href="tel:+375257039154" class="footer__nav-link">life +375 (25)
-                              703-91-54</a></li>
-                      <li class="footer__nav-item"><a href="https://maps.app.goo.gl/iEGMQkMQWpxwodFWA"
-                              class="footer__nav-link" target="_blank">
-                              <address class="underline">г. Минск, Республика <br>
-                                  Беларусь</address>
-                          </a></li>
-                  </ul>
-              </nav>
-              <nav class="footer__nav-sns">
-                  <ul class="footer__sns-items">
-                      <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
-                              <img src="../svg/social.svg" alt="sns">
-                              <span class="footer__sns-text">Telegram</span>
-                          </a></li>
-                      <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
-                              <img src="../svg/social.svg" alt="sns">
-                              <span class="footer__sns-text">Telegram</span>
-                          </a></li>
-                      <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
-                              <img src="../svg/social.svg" alt="sns">
-                              <span class="footer__sns-text">Telegram</span>
-                          </a></li>
-                      <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
-                              <img src="../svg/social.svg" alt="sns">
-                              <span class="footer__sns-text">Telegram</span>
-                          </a></li>
-                      <li class="footer__sns-item"><a href="#" class="footer__sns-link underline">
-                              <img src="../svg/social.svg" alt="sns">
-                              <span class="footer__sns-text">Telegram</span>
-                          </a></li>
-                  </ul>
-              </nav>
-          </div>
-          <div class="footer__copyright">© 2023 WOW</div>
-      </footer>
+            <div class="under-footer">
+                <div class="container">
+                    <div class="footer__copyright">© 2024 WOW</div>
+                    <div class="footer__confidentiality"><a href="#">Политика конфиденциальности</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../libs/js.cookie.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

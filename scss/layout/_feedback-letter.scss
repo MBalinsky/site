@@ -1,0 +1,115 @@
+.sent-letter {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background: linear-gradient(rgba(7, 70, 62, 1), rgba(31, 209, 249, 1));
+    max-width: fit-content;
+    z-index: 1100;
+    overflow: hidden;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 5px;
+    &--active{
+        top: 90px;
+        overflow: visible;
+        opacity: 1;
+        transition: .2s;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background: $bodyColor;
+        border-radius: 5px;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+    }
+    &__text {
+        position: relative;
+        z-index: 1150;
+        font-size: 27px;
+    }
+    img{
+        position: relative;
+        z-index: 1150;
+        width: 20px;
+    }
+}
+
+.nosent-letter {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background: linear-gradient(rgba(7, 70, 62, 1), rgba(31, 209, 249, 1));
+    max-width: fit-content;
+    z-index: 1100;
+    overflow: hidden;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 5px;
+    &--active{
+        top: 90px;
+        overflow: visible;
+        opacity: 1;
+        transition: .2s;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background: $bodyColor;
+        border-radius: 5px;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+    }
+    &__text {
+        position: relative;
+        z-index: 1150;
+        font-size: 27px;
+    }
+    img{
+        position: relative;
+        z-index: 1150;
+        width: 20px;
+    }
+}
+
+
+@media(max-width: 700px){
+    .sent-letter{
+        &__text {
+            font-size: calc(13px + (14 + 14 * 0.7) * (100vw - 320px) / 700);
+        }
+        img{
+            width: calc(13px + (20 - 13) * (100vw - 320px) / (700 - 320));
+        }
+    }
+    .nosent-letter{
+        &__text {
+            font-size: calc(13px + (14 + 14 * 0.7) * (100vw - 320px) / 700);
+        }
+        img{
+            width: calc(13px + (20 - 13) * (100vw - 320px) / (700 - 320));
+        }
+    }
+}
